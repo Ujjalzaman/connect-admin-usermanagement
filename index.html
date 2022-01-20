@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <!-- svg area  -->
+        <svg style="display:none;">
+            <symbol id="down" viewBox="0 0 16 16">
+                <polygon points="3.81 4.38 8 8.57 12.19 4.38 13.71 5.91 8 11.62 2.29 5.91 3.81 4.38" />
+            </symbol>
+            <symbol id="users" viewBox="0 0 16 16">
+                <path
+                    d="M8,0a8,8,0,1,0,8,8A8,8,0,0,0,8,0ZM8,15a7,7,0,0,1-5.19-2.32,2.71,2.71,0,0,1,1.7-1,13.11,13.11,0,0,0,1.29-.28,2.32,2.32,0,0,0,.94-.34,1.17,1.17,0,0,0-.27-.7h0A3.61,3.61,0,0,1,5.15,7.49,3.18,3.18,0,0,1,8,4.07a3.18,3.18,0,0,1,2.86,3.42,3.6,3.6,0,0,1-1.32,2.88h0a1.13,1.13,0,0,0-.27.69,2.68,2.68,0,0,0,.93.31,10.81,10.81,0,0,0,1.28.23,2.63,2.63,0,0,1,1.78,1A7,7,0,0,1,8,15Z" />
+            </symbol>
+            <symbol id="pages" viewBox="0 0 16 16">
+                <rect x="4" width="12" height="12" transform="translate(20 12) rotate(-180)" />
+                <polygon points="2 14 2 2 0 2 0 14 0 16 2 16 14 16 14 14 2 14" />
+            </symbol>
+            <symbol id="collapse" viewBox="0 0 16 16">
+                <polygon points="11.62 3.81 7.43 8 11.62 12.19 10.09 13.71 4.38 8 10.09 2.29 11.62 3.81" />
+            </symbol>
+        </svg>
+        <!-- svg area  -->
+
+        <!-- header area  -->
+        <header class="page-header">
+            <nav>
+                <a href="#0" aria-label=" logo" class="logo">
+                    <img src="./assets/connectlogo.png" alt="" width="100px">
+                </a>
+                <button class="toggle-mob-menu" aria-expanded="false" aria-label="open menu">
+                    <svg width="20" height="20" aria-hidden="true">
+                        <use xlink:href="#down"></use>
+                    </svg>
+                </button>
+                <ul class="admin-menu">
+                    <li class="menu-heading">
+                        <h3>Dashboard</h3>
+                    </li>
+                    <li>
+                        <a href="#0">
+                            <svg>
+                                <use xlink:href="#pages"></use>
+                            </svg>
+                            <span>Pages</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#0">
+                            <svg>
+                                <use xlink:href="#users"></use>
+                            </svg>
+                            <span>Manage Users</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="switch">
+                            <input type="checkbox" id="mode" checked>
+                            <label for="mode">
+                                <span></span>
+                                <span>Dark</span>
+                            </label>
+                        </div>
+                        <button class="collapse-btn" aria-expanded="true" aria-label="collapse menu">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#collapse"></use>
+                            </svg>
+                            <span>Collapse</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- header area end  -->
+
+        <!-- sectino area start -->
+        <section class="page-content">
+
+            <section class="container mt-5">
+                <div class="table-responsive">
+                    <table class="table shadow table-light table-hover table-sm text-center">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Status</th>
+                                <th scope="col">Company</th>
+                                <th scope="col">Full Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">User name</th>
+                                <th scope="col">Member Type</th>
+                                <th scope="col">Country</th>
+                                <th scope="col">City</th>
+                                <th scope="col">User Type</th>
+                                <th scope="col">Action</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Active</td>
+                                <td>Gates</td>
+                                <td>Ashish</td>
+                                <td>ak@thegates.biz</td>
+                                <td>Ashis</td>
+                                <td>Staff</td>
+                                <td>Singapore</td>
+                                <td>-</td>
+                                <td>User Type</td>
+                                <td>
+
+                                     <div class="btn-group dropleft">
+                                        <button type="button" class="btn btn-secondary dropdown-toggle btn-sm"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Dropleft
+                                        </button>
+                                        <div class="dropdown-menu">
+                                             <span class="d-flex flex-column"> 
+                                         
+                                          
+                                            <button class="btn btn-">view</button>
+                                                <button>edit</button>
+                                                <button>delete</button>
+                                            </span> 
+                                        </div>
+                                    </div> 
+
+           
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Active</td>
+                                <td>Gates</td>
+                                <td>Ashish</td>
+                                <td>ak@thegates.biz</td>
+                                <td>Ashis</td>
+                                <td>Staff</td>
+                                <td>Singapore</td>
+                                <td>-</td>
+                                <td>User Type</td>
+                                <td>Edit</td>
+                            </tr>
+                            <tr>
+                                <td>Active</td>
+                                <td>Gates</td>
+                                <td>Ashish</td>
+                                <td>ak@thegates.biz</td>
+                                <td>Ashis</td>
+                                <td>Staff</td>
+                                <td>Singapore</td>
+                                <td>-</td>
+                                <td>User Type</td>
+                                <td>Edit</td>
+                            </tr>
+                            <tr>
+                                <td>Active</td>
+                                <td>Gates</td>
+                                <td>Ashish</td>
+                                <td>ak@thegates.biz</td>
+                                <td>Ashis</td>
+                                <td>Staff</td>
+                                <td>Singapore</td>
+                                <td>-</td>
+                                <td>User Type</td>
+                                <td>Edit</td>
+                            </tr>
+                            <tr>
+                                <td>Active</td>
+                                <td>Gates</td>
+                                <td>Ashish</td>
+                                <td>ak@thegates.biz</td>
+                                <td>Ashis</td>
+                                <td>Staff</td>
+                                <td>Singapore</td>
+                                <td>-</td>
+                                <td>User Type</td>
+                                <td>Edit</td>
+                            </tr>
+                            <tr>
+                                <td>Active</td>
+                                <td>Gates</td>
+                                <td>Ashish</td>
+                                <td>ak@thegates.biz</td>
+                                <td>Ashis</td>
+                                <td>Staff</td>
+                                <td>Singapore</td>
+                                <td>-</td>
+                                <td>User Type</td>
+                                <td>Edit</td>
+                            </tr>
+                            <tr>
+                                <td>Active</td>
+                                <td>Gates</td>
+                                <td>Ashish</td>
+                                <td>ak@thegates.biz</td>
+                                <td>Ashis</td>
+                                <td>Staff</td>
+                                <td>Singapore</td>
+                                <td>-</td>
+                                <td>User Type</td>
+                                <td>Edit</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+        </section>
+        <!-- section area start -->
+
+    </main>
+
+
+    <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
