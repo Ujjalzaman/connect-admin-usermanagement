@@ -67,6 +67,92 @@
                             <span>Manage Users</span>
                         </a>
                     </li>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <a href="">Manage Users Admin</a>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+
+                                    <li>
+                                        <a href="#0">
+                                            <svg>
+                                                <use xlink:href="#users"></use>
+                                            </svg>
+                                            <span>Panding Request</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#0">
+                                            <svg>
+                                                <use xlink:href="#users"></use>
+                                            </svg>
+                                            <span>Active Request</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#0">
+                                            <svg>
+                                                <use xlink:href="#users"></use>
+                                            </svg>
+                                            <span>Reject Request</span>
+                                        </a>
+                                    </li>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <a href="">Manage Users staff</a>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+
+                                    <li>
+                                        <a href="#0">
+                                            <svg>
+                                                <use xlink:href="#users"></use>
+                                            </svg>
+                                            <span>Panding Request</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#0">
+                                            <svg>
+                                                <use xlink:href="#users"></use>
+                                            </svg>
+                                            <span>Active Request</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#0">
+                                            <svg>
+                                                <use xlink:href="#users"></use>
+                                            </svg>
+                                            <span>Reject Request</span>
+                                        </a>
+                                    </li>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                     <li>
                         <div class="switch">
                             <input type="checkbox" id="mode" checked>
@@ -82,6 +168,7 @@
                             <span>Collapse</span>
                         </button>
                     </li>
+
                 </ul>
             </nav>
         </header>
@@ -89,8 +176,9 @@
 
         <!-- sectino area start -->
         <section class="page-content">
+            <h4 class="bg-secondary p-2">Staff Table</h4>
 
-            <section class="container mt-5">
+            <section class="container mt-4">
                 <div class="table-responsive">
                     <table class="table shadow table-light table-hover table-sm text-center">
                         <thead class="thead-light">
@@ -141,7 +229,7 @@
                                             <div class="tooltip">View</div>
                                             <span><i class="fas fa-eye mx-1"></i></span>
                                         </div>
-                                     
+
                                         <div class="icon edit">
                                             <div class="tooltip">Edit</div>
                                             <span><i class="fas fa-edit mx-1"></i></span>
@@ -169,7 +257,7 @@
                                             <div class="tooltip">View</div>
                                             <span><i class="fas fa-eye mx-1"></i></span>
                                         </div>
-                                     
+
                                         <div class="icon edit">
                                             <div class="tooltip">Edit</div>
                                             <span><i class="fas fa-edit mx-1"></i></span>
@@ -196,7 +284,7 @@
                                             <div class="tooltip">View</div>
                                             <span><i class="fas fa-eye mx-1"></i></span>
                                         </div>
-                                     
+
                                         <div class="icon edit">
                                             <div class="tooltip">Edit</div>
                                             <span><i class="fas fa-edit mx-1"></i></span>
@@ -223,7 +311,7 @@
                                             <div class="tooltip">View</div>
                                             <span><i class="fas fa-eye mx-1"></i></span>
                                         </div>
-                                     
+
                                         <div class="icon edit">
                                             <div class="tooltip">Edit</div>
                                             <span><i class="fas fa-edit mx-1"></i></span>
@@ -250,7 +338,7 @@
                                             <div class="tooltip">View</div>
                                             <span><i class="fas fa-eye mx-1"></i></span>
                                         </div>
-                                     
+
                                         <div class="icon edit">
                                             <div class="tooltip">Edit</div>
                                             <span><i class="fas fa-edit mx-1"></i></span>
@@ -277,7 +365,7 @@
                                             <div class="tooltip">View</div>
                                             <span><i class="fas fa-eye mx-1"></i></span>
                                         </div>
-                                     
+
                                         <div class="icon edit">
                                             <div class="tooltip">Edit</div>
                                             <span><i class="fas fa-edit mx-1"></i></span>
@@ -291,17 +379,223 @@
                         </tbody>
                     </table>
                 </div>
-
-              
-
-                
-
             </section>
-
 
         </section>
 
         <!-- section area start -->
+
+        <section class="page-content">
+            <h4 class="bg-secondary p-2">Super Admin Table</h4>
+
+            <section class="container mt-4">
+                <div class="table-responsive">
+                    <table class="table shadow table-light table-hover table-sm text-center">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Status</th>
+                                <th scope="col">Company</th>
+                                <th scope="col">Full Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">User name</th>
+                                <th scope="col">Member Type</th>
+                                <th scope="col">Country</th>
+                                <th scope="col">City</th>
+                                <th scope="col">User Type</th>
+                                <th scope="col">Action</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-danger">
+                                <td>Active</td>
+                                <td>Gates</td>
+                                <td>
+                                    <span class="text-decoration-line-through d-block"> Ashish kapahu</span>
+                                    Ashish</td>
+                                <td ><span class="text-decoration-line-through d-block">ak@thegates.com </span> ak@thegates.biz</td>
+                                <td>Ashis</td>
+                                <td>Staff</td>
+                                <td class="text-decoration-line-through">Singapore</td>
+                                <td>-</td>
+                                <td>User Type</td>
+                                <td>
+                                    <i class="fas fa-eye mx-1"></i>
+                                    <i class="fas fa-edit mx-1"></i>
+                                    <i class="fas fa-times-circle mx-1" style="color:red"></i>
+                                </td>
+                            </tr>
+                            <tr class="table-primary">
+                                <td>Active</td>
+                                <td>Gates</td>
+                                <td>
+                                    <span class="text-decoration-line-through d-block"> Ashish kapahu</span>
+                                    Ashish</td>
+                                <td ><span class="text-decoration-line-through d-block">ak@thegates.com </span> ak@thegates.biz</td>
+                                <td>Ashis</td>
+                                <td>Staff</td>
+                                <td ><span class="text-decoration-line-through d-block">India</span> Singapore</td>
+                                <td>-</td>
+                                <td>User Type</td>
+                                <td>
+                                    <div class="wrapper">
+                                        <div class="icon view">
+                                            <div class="tooltip">View</div>
+                                            <span><i class="fas fa-eye mx-1"></i></span>
+                                        </div>
+
+                                        <div class="icon edit">
+                                            <div class="tooltip">Edit</div>
+                                            <span><i class="fas fa-edit mx-1"></i></span>
+                                        </div>
+                                        <div class="icon delete">
+                                            <div class="tooltip ">Delete</div>
+                                            <span><i class="fas fa-times-circle mx-1"></i></span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Active</td>
+                                <td>Gates</td>
+                                <td>Ashish</td>
+                                <td>ak@thegates.biz</td>
+                                <td>Ashis</td>
+                                <td>Staff</td>
+                                <td>Singapore</td>
+                                <td>-</td>
+                                <td>User Type</td>
+                                <td>
+                                    <div class="wrapper">
+                                        <div class="icon view">
+                                            <div class="tooltip">View</div>
+                                            <span><i class="fas fa-eye mx-1"></i></span>
+                                        </div>
+
+                                        <div class="icon edit">
+                                            <div class="tooltip">Edit</div>
+                                            <span><i class="fas fa-edit mx-1"></i></span>
+                                        </div>
+                                        <div class="icon delete">
+                                            <div class="tooltip ">Delete</div>
+                                            <span><i class="fas fa-times-circle mx-1"></i></span>
+                                        </div>
+                                    </div>
+                            </tr>
+                            <tr>
+                                <td>Active</td>
+                                <td>Gates</td>
+                                <td>Ashish</td>
+                                <td>ak@thegates.biz</td>
+                                <td>Ashis</td>
+                                <td>Staff</td>
+                                <td>Singapore</td>
+                                <td>-</td>
+                                <td>User Type</td>
+                                <td>
+                                    <div class="wrapper">
+                                        <div class="icon view">
+                                            <div class="tooltip">View</div>
+                                            <span><i class="fas fa-eye mx-1"></i></span>
+                                        </div>
+
+                                        <div class="icon edit">
+                                            <div class="tooltip">Edit</div>
+                                            <span><i class="fas fa-edit mx-1"></i></span>
+                                        </div>
+                                        <div class="icon delete">
+                                            <div class="tooltip ">Delete</div>
+                                            <span><i class="fas fa-times-circle mx-1"></i></span>
+                                        </div>
+                                    </div>
+                            </tr>
+                            <tr>
+                                <td>Active</td>
+                                <td>Gates</td>
+                                <td>Ashish</td>
+                                <td>ak@thegates.biz</td>
+                                <td>Ashis</td>
+                                <td>Staff</td>
+                                <td>Singapore</td>
+                                <td>-</td>
+                                <td>User Type</td>
+                                <td>
+                                    <div class="wrapper">
+                                        <div class="icon view">
+                                            <div class="tooltip">View</div>
+                                            <span><i class="fas fa-eye mx-1"></i></span>
+                                        </div>
+
+                                        <div class="icon edit">
+                                            <div class="tooltip">Edit</div>
+                                            <span><i class="fas fa-edit mx-1"></i></span>
+                                        </div>
+                                        <div class="icon delete">
+                                            <div class="tooltip ">Delete</div>
+                                            <span><i class="fas fa-times-circle mx-1"></i></span>
+                                        </div>
+                                    </div>
+                            </tr>
+                            <tr>
+                                <td>Active</td>
+                                <td>Gates</td>
+                                <td>Ashish</td>
+                                <td>ak@thegates.biz</td>
+                                <td>Ashis</td>
+                                <td>Staff</td>
+                                <td>Singapore</td>
+                                <td>-</td>
+                                <td>User Type</td>
+                                <td>
+                                    <div class="wrapper">
+                                        <div class="icon view">
+                                            <div class="tooltip">View</div>
+                                            <span><i class="fas fa-eye mx-1"></i></span>
+                                        </div>
+
+                                        <div class="icon edit">
+                                            <div class="tooltip">Edit</div>
+                                            <span><i class="fas fa-edit mx-1"></i></span>
+                                        </div>
+                                        <div class="icon delete">
+                                            <div class="tooltip ">Delete</div>
+                                            <span><i class="fas fa-times-circle mx-1"></i></span>
+                                        </div>
+                                    </div>
+                            </tr>
+                            <tr>
+                                <td>Active</td>
+                                <td>Gates</td>
+                                <td>Ashish</td>
+                                <td>ak@thegates.biz</td>
+                                <td>Ashis</td>
+                                <td>Staff</td>
+                                <td>Singapore</td>
+                                <td>-</td>
+                                <td>User Type</td>
+                                <td>
+                                    <div class="wrapper">
+                                        <div class="icon view">
+                                            <div class="tooltip">View</div>
+                                            <span><i class="fas fa-eye mx-1"></i></span>
+                                        </div>
+
+                                        <div class="icon edit">
+                                            <div class="tooltip">Edit</div>
+                                            <span><i class="fas fa-edit mx-1"></i></span>
+                                        </div>
+                                        <div class="icon delete">
+                                            <div class="tooltip ">Delete</div>
+                                            <span><i class="fas fa-times-circle mx-1"></i></span>
+                                        </div>
+                                    </div>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </section>
 
     </main>
 
@@ -321,9 +615,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
+
 
 </body>
 
