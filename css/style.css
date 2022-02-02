@@ -53,8 +53,8 @@ svg {
 
 body {
   font: 16px/1.5 "Lato", sans-serif;
-}
 
+}
 
 /* HEADER STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -172,23 +172,19 @@ body {
 }
 
 
-/* issues 151 css  */
+/* table style  */
+
 .staff-data-change{
   color:#DA6B36;
 }
 .user-role table thead tr, .staff-country table thead tr{
   background-color: #C4C4C4 !important;
 }
-.user-role h6, .staff-country h6{
+.user-role h6, .staff-country h6, .user-role  table  tbody > tr  h6{
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
 }
-
-.user-role  table  tbody > tr  h6{
-  font-size: 14px;
-  padding:4px 10px;  
-}
-.user-role  table  tbody > tr > td li label{
+.user-role  table  tbody > tr > td li label {
   font-size: 12px;
 }
 .user-role  table  tbody > tr > td:last-child{
@@ -207,16 +203,17 @@ body {
   margin-top: 3px;
   font-size: 14px;
 }
+.user-role  table  tbody > tr > td button{
+  font-size: 14px !important; 
+} 
 .accordion{
   background-color: #f8f9fa !important;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content:center;
 }
 .accordion-button{
   background-color: #f8f9fa !important;
-  /* padding:8px 3px !important; */
 }
 .accordion-item{
   background-color: #f8f9fa !important;
@@ -227,57 +224,45 @@ body {
   border-color: none !important;
   outline: none !important;
 }
-.staff-country  thead th, .user-role thead th {
-    border: none;
-}
 .accordion-body ul {
   margin-left: -20px ;
   border-bottom: none;
-  margin-top: -20px !important;
+  margin-top: -18px !important;
 }
 .accordion-button:not(.collapsed) {
   box-shadow: none !important;
 }
-.staff-country > table > tbody > span {
-  width: 40px;
-}
 .accordion-colapse {
   margin: -1rem !important;
   padding:0 !important;
-
 }
+.staff-country > table > tbody > span {
+  width: 40px;
+}
+.staff-country  thead th, .user-role thead th {
+  border: none;
+}
+/* table style end  */
 
-/* table design  */
-
-
-
-
-/* MQ RULES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 767px) {
   .page-header,
   .page-content {
     position: static;
     width: 100%;
   }
-
   .page-header {
     padding: 10px;
   }
-
   .page-header nav {
     flex-direction: row;
   }
-
   .page-header .logo {
     margin: 0;
   }
-
   .page-header .logo svg {
     width: 83px;
     height: 35px;
   }
-
   .page-header .toggle-mob-menu {
     display: block;
   }
@@ -306,8 +291,6 @@ body {
 
  
 }
-
-
 /* BODY CLASSES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .mob-menu-opened .toggle-mob-menu svg {
@@ -319,7 +302,6 @@ body {
   visibility: visible;
   opacity: 1;
 }
-
 @media screen and (min-width: 768px) {
   .collapsed .page-header {
     width: 40px;
