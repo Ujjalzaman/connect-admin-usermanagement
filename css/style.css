@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
-
 :root {
   --page-header-bgColor: #242e42;
   --page-header-bgColor-hover: #1d2636;
@@ -159,21 +158,6 @@ body {
 
 /* PAGE CONTENT STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.updated-on-date-time{
-  font-size: 12px;
-  display: flex;
-  flex-direction: column;
-  font-weight: 500;
-}
-.updated-on-date-time span{
-  font-size: 11px;
-  margin: 0;
-  padding: 0;
-}
-.updated-on-date-time p{
-  margin: 0;
-  padding: 0;
-}
 .page-content {
   position: relative;
   left: var(--page-header-width);
@@ -189,16 +173,17 @@ body {
 
 
 /* issues 151 css  */
-.user-role table thead tr{
+.staff-data-change{
+  color:#DA6B36;
+}
+.user-role table thead tr, .staff-country table thead tr{
   background-color: #C4C4C4 !important;
 }
 .user-role h6, .staff-country h6{
   font-weight: 600;
   font-size: 18px;
 }
-.user-role  table  tbody > tr > td > ul span{
-  /* padding-left: -20px; */
-}
+
 .user-role  table  tbody > tr  h6{
   font-size: 14px;
   padding:4px 10px;  
@@ -211,7 +196,10 @@ body {
   color: #1d75fa;
   cursor: pointer;
 }
-
+.staff-country-assigned table  button {
+  min-width: 25%;
+  margin-top: 5px;
+}
 .staff-country p{
   font-weight: 400;
   margin: 0;
@@ -258,6 +246,8 @@ body {
   padding:0 !important;
 
 }
+
+/* table design  */
 
 
 
