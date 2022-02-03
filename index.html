@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light-mode">
+<html lang="en" class="">
 
 <head>
     <meta charset="UTF-8">
@@ -93,40 +93,12 @@
         </header>
         <!-- header area end  -->
 
-        <!-- section area start -->
-        <div class="mt-5">
+        <!-- content -->
+        <div class="">
             <section class="page-content">
-                <section class="container d-block">
-                    <div class="admin-view-users d-flex justify-content-between">
-                        <h6 class="p-1">View Users</h6>
-                        <!-- reject modal  -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog ">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Reject Reason</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form>
-                                            <div class="mb-3">
-                                                <label for="message-text" class="col-form-label">Message:</label>
-                                                <textarea class="form-control" id="message-text"></textarea>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary btn-sm"
-                                            data-bs-dismiss="modal">Cancel</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Reject</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- reject modal  -->
-
+                <section class="admin-view-users mt-5 shadow-sm p-2">
+                    <div class="d-flex justify-content-between py-2">
+                        <h6 class="mt-2 px-2">View Users</h6>
                         <div class="">
                             <div class="d-flex align-items-center">
                                 <button class="btn btn-secondary btn-sm m-1">Add</button>
@@ -137,17 +109,42 @@
                                         Select
                                     </a>
 
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Action</a>
-
-                                    </div>
                                 </div>
                                 <button class="btn btn-secondary btn-sm m-1">Apply</button>
                             </div>
                         </div>
                     </div>
+
+                    <!-- reject modal  -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog ">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Reject Reason</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Message:</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm"
+                                        data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-danger btn-sm">Reject</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- reject modal  -->
+
                     <div class="table-responsive">
-                        <table class="table shadow table-light table-hover table-sm text-center">
+                        <table class="table shadow table-hover table-sm text-center">
                             <thead class="thead-light text-center">
                                 <tr>
                                     <th>
@@ -538,11 +535,11 @@
                     </div>
                 </section>
 
-                <section class="container d-block">
-                    <div class="user-role d-block">
-                        <h6 class="p-1">Staff User Role</h6>
+                <section class="d-block mt-5">
+                    <div class="user-role d-block p-2">
+                        <h6 class="py-2 px-2">Staff Role Setting</h6>
                         <div class="table-responsive">
-                            <table class="table shadow-sm table-light table-sm text-center align-middle">
+                            <table class="table shadow table-sm text-center align-middle">
                                 <thead class="text-center table">
                                     <tr class="text-center align-middle">
                                         <th scope="col-4" class="col-3">Page Name</th>
@@ -777,7 +774,7 @@
                         </div>
                     </div>
 
-                    <div class="staff-country d-block">
+                    <div class="staff-country d-block p-2 mt-5">
                         <h6 class="p-1">Staff Country Assign</h6>
 
                         <!-- country modal  -->
@@ -867,7 +864,7 @@
                         <!-- country modal  -->
 
                         <div class="table-responsive staff-country-assigned">
-                            <table class="table shadow-sm table-light table-hover table-sm text-center">
+                            <table class="table shadow table-hover table-sm text-center">
                                 <thead class="table text-center">
                                     <tr>
                                         <th scope="col">Name</th>
@@ -955,8 +952,6 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
-
     <script src="./js/script.js"></script>
 
     <script>

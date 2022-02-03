@@ -5,10 +5,10 @@
   --page-header-txtColor: #dde9f8;
   --page-header-headingColor: #7889a4;
   --page-header-width: 220px;
-  --page-content-bgColor: #f0f1f6;
+  --page-content-bgColor: #EFF3F6;
   --page-content-txtColor: #171616;
-  --page-content-blockColor: #fff;
-  --white: #fff;
+  /* --page-content-blockColor: #EFF3F6; */
+  /* --white: #fff; */
   --black: #333;
   --blue: #00b9eb;
   --red: #ec1848;
@@ -167,25 +167,21 @@ body {
   color: var(--page-content-txtColor);
   background: var(--page-content-bgColor);
 }
-.page-content table td >i{
-  cursor: pointer;
+.admin-view-users, .user-role, .staff-country{
+  background-color: white;
 }
-
-
-/* table style  */
-
 .staff-data-change{
   color:#DA6B36;
 }
-.user-role table thead tr, .staff-country table thead tr{
-  background-color: #C4C4C4 !important;
+.admin-view-users table th, .user-role table th, .staff-country-assigned table th{
+  background-color: #F5F8FA  !important;
+  padding: 10px !important;
+  color:#7F99BE;
+  font-size: 14px;
 }
-.user-role h6, .staff-country h6, .user-role  table  tbody > tr  h6{
+.user-role h6, .staff-country h6, .user-role  table  tbody > tr  h6, .admin-view-users  h6{
   font-weight: 600;
-  font-size: 16px;
-}
-.user-role  table  tbody > tr > td li label {
-  font-size: 12px;
+  font-size: 18px;
 }
 .user-role  table  tbody > tr > td:last-child{
   font-size: 14px;
@@ -196,29 +192,17 @@ body {
   min-width: 25%;
   margin-top: 5px;
 }
-.staff-country p{
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  margin-top: 3px;
-  font-size: 14px;
-}
-.user-role  table  tbody > tr > td button{
+.user-role  table  tbody > tr > td button, .staff-country p{
   font-size: 14px !important; 
 } 
 .accordion{
-  background-color: #f8f9fa !important;
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
 }
-.accordion-button{
-  background-color: #f8f9fa !important;
-}
-.accordion-item{
-  background-color: #f8f9fa !important;
-  border:none !important; 
-}
+.accordion, .accordion-button, .accordion-item{
+  background-color: white !important;
+} 
 .accordion-button:focus {
   box-shadow: none !important;
   border-color: none !important;
@@ -229,7 +213,7 @@ body {
   border-bottom: none;
   margin-top: -18px !important;
 }
-.accordion-button:not(.collapsed) {
+.accordion-button:not(.collapsed), .accordion-button {
   box-shadow: none !important;
 }
 .accordion-colapse {
@@ -239,7 +223,7 @@ body {
 .staff-country > table > tbody > span {
   width: 40px;
 }
-.staff-country  thead th, .user-role thead th {
+.staff-country  thead th, .user-role thead th, .admin-view-users table th {
   border: none;
 }
 /* table style end  */
