@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap') */
 :root {
   --page-header-bgColor: #242e42;
   --page-header-bgColor-hover: #1d2636;
@@ -7,8 +8,6 @@
   --page-header-width: 220px;
   --page-content-bgColor: #EFF3F6;
   --page-content-txtColor: #171616;
-  /* --page-content-blockColor: #EFF3F6; */
-  /* --white: #fff; */
   --black: #333;
   --blue: #00b9eb;
   --red: #ec1848;
@@ -19,41 +18,25 @@
   --switch-moonColor: #f4f4f4;
   --switch-bgDarkModeColor: #1f1f27;
 }
-
 ul {
   list-style: none;
 }
-
-a,
-button {
-  color: inherit;
-}
-
-a {
-  text-decoration: none;
-}
-
 button {
   background: none;
   cursor: pointer;
 }
-
 .page-header [type="checkbox"] {
   position: absolute;
   left: -9999px;
 } 
-
 button {
   border: none;
 }
-
 svg {
   display: block;
 }
-
-body {
-  font: 16px/1.5 "Lato", sans-serif;
-
+*{
+  font-family: "Lato", sans-serif;
 }
 
 /* HEADER STYLES
@@ -84,7 +67,6 @@ body {
   max-width: 120px;
   fill: var(--white);
 }
-
 .page-header .toggle-mob-menu {
   display: none;
   margin-left: 5px;
@@ -92,14 +74,12 @@ body {
   background: var(--page-content-blockColor);
   border-radius: var(--border-radius);
 }
-
 .page-header .admin-menu {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   margin-top: 35px;
 }
-
 .page-header .admin-menu li:nth-last-child(2) {
   margin-bottom: 35px;
 }
@@ -179,6 +159,10 @@ body {
   color:#7F99BE;
   font-size: 14px;
 }
+.user-role table .accordion-body ul li label{
+  font-size: 12px;
+  margin-right: 5px;
+}
 .user-role h6, .staff-country h6, .user-role  table  tbody > tr  h6, .admin-view-users  h6{
   font-weight: 600;
   font-size: 18px;
@@ -188,17 +172,18 @@ body {
   color: #1d75fa;
   cursor: pointer;
 }
-.staff-country-assigned table  button {
-  min-width: 25%;
-  margin-top: 5px;
-}
-.user-role  table  tbody > tr > td button, .staff-country p{
+.user-role  table  tbody > tr > td button, .staff-country p,.admin-view-users table tbody tr td{
   font-size: 14px !important; 
 } 
 .accordion{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:center;
+  width: 70%;
+  margin-left: 2rem;
+}
+.accordion-button::after {
+    background-size: 1rem !important;
+}
+.viewUserViewUnsubsribed .accordion-button::after{
+  background-image: none !important;
 }
 .accordion, .accordion-button, .accordion-item{
   background-color: white !important;
@@ -209,16 +194,15 @@ body {
   outline: none !important;
 }
 .accordion-body ul {
-  margin-left: -20px ;
   border-bottom: none;
   margin-top: -18px !important;
 }
 .accordion-button:not(.collapsed), .accordion-button {
   box-shadow: none !important;
 }
-.accordion-colapse {
-  margin: -1rem !important;
-  padding:0 !important;
+.staff-country-assigned table  button {
+  min-width: 25%;
+  margin-top: 5px;
 }
 .staff-country > table > tbody > span {
   width: 40px;
@@ -226,7 +210,17 @@ body {
 .staff-country  thead th, .user-role thead th, .admin-view-users table th {
   border: none;
 }
+.staff-country-assigned table tbody tr td:first-child p{
+  margin-top: 5px;
+}
 /* table style end  */
+
+
+
+
+
+
+
 
 @media screen and (max-width: 767px) {
   .page-header,
